@@ -12,6 +12,8 @@ router.post('/login', UsersController.loginUser);
 router.post('/admin', AdminController.cadastrarAdmin);
 router.post('/login', AdminController.loginAdmin);
 
+router.put('/reserva/quarto/:id_quarto', QuartosController.ReservaQuarto);
+
 
 router.get('/users/:email_user', UsersController.getUserPorEmail);
 
